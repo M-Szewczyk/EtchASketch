@@ -76,6 +76,9 @@ document.onmouseup = function() {
     window.mouseDown = false;
 }
 
+const title = document.createElement('h1')
+title.textContent = "Etch-a-Sketch";
+header.appendChild(title);
 header.appendChild(addButton('Reset', clearGrid));
 createGrid(rows, columns);
 footer.appendChild(addTextBox());
